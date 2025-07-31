@@ -103,7 +103,9 @@ def render(filename, **context):
         )
         # Uncomment to debug generated Python code:
         # write("/tmp", "mako_%s.py" % os.path.basename(filename), template.code)
-        return template.render(**context)
+        result = template.render(**context)
+        result = result.replace('\r\n', '\n').replace('\r', '\n')
+        return result
     except Exception:
         # Uncomment to see a traceback in generated Python code:
         # raise

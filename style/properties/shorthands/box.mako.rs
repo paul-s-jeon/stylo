@@ -71,7 +71,7 @@ ${helpers.two_properties_shorthand(
 </%helpers:shorthand>
 
 <%helpers:shorthand
-    engines="gecko"
+    engines="gecko servo"
     name="page-break-before"
     flags="IS_LEGACY_SHORTHAND"
     sub_properties="break-before"
@@ -95,7 +95,7 @@ ${helpers.two_properties_shorthand(
 </%helpers:shorthand>
 
 <%helpers:shorthand
-    engines="gecko"
+    engines="gecko servo"
     name="page-break-after"
     flags="IS_LEGACY_SHORTHAND"
     sub_properties="break-after"
@@ -119,7 +119,7 @@ ${helpers.two_properties_shorthand(
 </%helpers:shorthand>
 
 <%helpers:shorthand
-    engines="gecko"
+    engines="gecko servo"
     name="page-break-inside"
     flags="IS_LEGACY_SHORTHAND"
     sub_properties="break-inside"

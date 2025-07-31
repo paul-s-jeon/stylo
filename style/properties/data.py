@@ -799,6 +799,7 @@ class PropertiesData(object):
             StyleStruct("Text", inherited=False, gecko_name="TextReset"),
             StyleStruct("UI", inherited=False, gecko_name="UIReset"),
             StyleStruct("XUL", inherited=False),
+            StyleStruct("MSO", inherited=False, gecko_name="MSO"),
         ]
         self.current_style_struct = None
 
