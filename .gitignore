@@ -3,3 +3,4 @@
 /target/
 /style/properties/__pycache__/
 Cargo.lock
+.vs

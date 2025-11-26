@@ -19,7 +19,7 @@ use std::{io, thread};
 use thin_vec::ThinVec;
 
 /// Platform-specific handle to a thread.
-#[cfg(unix)]
+#[cfg(all(unix, not(target_arch = "wasm32")))]
 pub type PlatformThreadHandle = RawPthread;
 /// Platform-specific handle to a thread.
 #[cfg(windows)]
