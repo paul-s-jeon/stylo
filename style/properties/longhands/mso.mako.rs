@@ -316,10 +316,12 @@ ${helpers.single_keyword(
 )}
 
 // MSO Tab Count - tab stops configuration
-${helpers.single_keyword(
+${helpers.predefined_type(
     "mso-tab-count",
-    "blank dashed dotted heavy lined middot",
+    "Integer",
+    "0",
     engines="servo",
+    parse_method="parse_non_negative",
     animation_type="discrete",
     spec="https://docs.microsoft.com/en-us/office/",
     affects="layout"
